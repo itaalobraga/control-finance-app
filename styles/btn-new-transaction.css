@@ -1,0 +1,14 @@
+.btn-new-transaction {
+    margin: auto;
+    max-width: calc(1120px + 1.2rem);
+    padding: 0 1.8rem;
+}
+
+.btn-new-transaction-text {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #49AA26;
+}

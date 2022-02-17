@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Controle de Financas</title>
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/cards.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/btn-new-transaction.css" />
+        <link rel="stylesheet" href="styles/tables.css" />
+        <link rel="stylesheet" href="styles/modal.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/7d6f1dcf72.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="h1-tittle">Controle de Financas</h1>
+        </header>
+        <main id="main">
+            <section class="cards">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <span class="card-tittle-enter">Entradas</span>
+                        <img src="assets/card-icons/Entradas.png" alt="" />
+                    </div>
+                    <span class="card-enter-value"></span>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <span class="card-tittle-exit">Saídas</span>
+                        <img src="assets/card-icons/Saídas.png" alt="" />
+                    </div>
+                    <span class="card-exit-value"></span>
+                </div>
+                <div class="card-total">
+                    <div class="card-wrapper">
+                        <span class="card-tittle-total">Total</span>
+                        <img src="assets/card-icons/Total.png" alt="" />
+                    </div>
+                    <span class="card-total-value"></span>
+                </div>
+            </section>
+            <div class="btn-new-transaction">
+                <span class="btn-new-transaction-text" onclick="openModal()">
+                    + Nova Transação
+                </span>
+            </div>
+            <section class="tables">
+                <div class="tables-container">
+                    <div class="table-titles">
+                        <span class="table-title">Descrição</span>
+                        <span class="table-title">Valor</span>
+                        <span class="table-title">Data</span>
+                    </div>
+                    <div class="table-divs-container"></div>
+                </div>
+            </section>
+            <div class="modal-fade">
+                <div class="modal-container">
+                    <div class="modal">
+                        <span class="modal-title">Nova Transação</span>
+                        <input
+                            type="text"
+                            name="desc-transaction"
+                            id="desc-transaction"
+                            placeholder="Descrição"
+                            autocomplete="off"
+                        />
+                        <input
+                            type="text"
+                            name="desc-value"
+                            id="desc-value"
+                            placeholder="0,00"
+                            autocomplete="off"
+                        />
+                        <p class="input-info">
+                            Use o sinal - (negativo) para despesas e, (vírgula)
+                            para casas decimais
+                        </p>
+                        <input
+                            type="date"
+                            name="date-value"
+                            id="date-value"
+                            min="2020"
+                            max="2022"
+                        />
+                        <div class="btn-modal-wrapper">
+                            <button
+                                class="btn-modal-cancel"
+                                onclick="closeModal()"
+                            >
+                                Cancelar
+                            </button>
+                            <button
+                                class="btn-modal-save"
+                                onclick="saveFinance()"
+                            >
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/modal.js"></script>
+        <script src="js/finance.js"></script>
+    </body>
+</html>

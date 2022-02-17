@@ -1,0 +1,101 @@
+.tables {
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.table-divs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.table {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    padding: 1.2rem 2.2rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.table-titles {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem 2.2rem;
+}
+
+.table-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #969cb3;
+}
+
+.table-desc {
+    position: absolute;
+    left: 10.3%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #363f5f;
+}
+
+.table-value {
+    position: absolute;
+    left: 47.5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #49aa26;
+}
+
+.table-data {
+    position: absolute;
+    right: 12.3%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #969cb3;
+}
+
+.table-btn-delete {
+    position: absolute;
+    right: 30px;
+    font-size: 2.6rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.table-btn-delete:hover {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        justify-content: space-between
+    }
+
+    .table-desc, .table-value, .table-data {
+        font-size: 1.5rem;
+    }
+
+    .table-desc, .table-value, .table-data, .table-btn-delete {
+        position: static;
+    }
+}

@@ -1,0 +1,87 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 3.4rem;
+    position: relative;
+    top: -5rem;
+    padding: 1.2rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+}
+
+.card, .card-total {
+    box-shadow: 0 0 .4rem gray;
+    border-radius: .5rem;
+    min-width: 352px;
+    padding: 3.2rem;
+}
+
+.card-total {
+    background-color: #49AA26;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-tittle-enter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #363f5f;
+}
+
+.card-tittle-exit {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #969cb3;
+}
+
+.card-tittle-total {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+}
+
+.card-enter-value,
+.card-exit-value {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    color: #363f5f;
+}
+
+.card-exit-value {
+    color: red;
+}
+
+.card-total-value {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1124px) {
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .card-total {
+        width: 100%;
+    }
+
+}

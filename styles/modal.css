@@ -1,0 +1,65 @@
+.modal-fade {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(73, 73, 73, .4);
+    /* z-index: 999; */
+}
+
+
+.modal-container {
+    padding: 1.8rem;
+    background-color: #F0F2F5;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.modal > input {
+    border: none;
+    padding: 1.2rem;
+}
+
+.modal-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #363f5f;
+}
+
+.btn-modal-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: .8rem;
+}
+
+.btn-modal-cancel, .btn-modal-save {
+    padding: 1.2rem;
+    width: 50%;
+    border-radius: .4rem;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.btn-modal-cancel {
+    background-color: transparent;
+    border: .08rem solid #ff3c00;
+    color: #ff3c00;
+}
+
+.btn-modal-save {
+    background-color: #49AA26;
+    border: none;
+    color: #FFFFFF;
+}
